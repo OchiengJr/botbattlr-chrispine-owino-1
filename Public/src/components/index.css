@@ -1,0 +1,37 @@
+/* Resetting default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  /* Wrapping long text */
+  .text-wrap {
+    word-wrap: break-word;
+  }
+  
+  /* Styling for bot army */
+  .bot-army {
+    overflow-x: scroll;
+    min-height: 300px;
+    max-width: 100%;
+  }
+  
+  /* Preventing flex wrap for bot army row */
+  .ui.grid > .row.bot-army-row {
+    flex-wrap: nowrap;
+    min-height: 100%;
+  }
+  
+  /* Adding padding to the grid */
+  .ui.grid {
+    padding: 0px 20px;
+  }
+  
+  /* Media query example for responsiveness */
+  @media screen and (max-width: 768px) {
+    .ui.grid {
+      padding: 0px 10px; /* Adjust padding for smaller screens */
+    }
+  }
+  
